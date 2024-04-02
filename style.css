@@ -2,6 +2,10 @@
     font-family: text;
     src: url(/font/text.ttf);
 }
+@font-face {
+    font-family: text1;
+    src: url(/font/text.woff2);
+}
 .text{
     font-feature-settings:"liga";
     font-family: 'text';
