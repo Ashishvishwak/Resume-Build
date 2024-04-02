@@ -234,15 +234,6 @@ function ProjectSelection(){
   });
   }
  
-//   // Dowload Resume
-//   function DowloadResume(){
-//     document.getElementById("dowload-resume").addEventListener("click", function () {
-//  let resume =document.querySelectorAll("#resume");
-
-//       window.print()
-    
-//     });
-//   }
 
 
 window.onload = function () {
@@ -269,4 +260,3 @@ AcievementSelection()
 ExperienceSelection()
 EducationSelection()
 ProjectSelection()
-DowloadResume()
