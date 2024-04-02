@@ -234,15 +234,34 @@ function ProjectSelection(){
   });
   }
  
-  // Dowload Resume
-  function DowloadResume(){
-    document.getElementById("dowload-resume").addEventListener("click", function () {
- let resume =document.querySelectorAll("#resume");
+//   // Dowload Resume
+//   function DowloadResume(){
+//     document.getElementById("dowload-resume").addEventListener("click", function () {
+//  let resume =document.querySelectorAll("#resume");
 
-      window.print()
+//       window.print()
     
-    });
-  }
+//     });
+//   }
+
+
+window.onload = function () {
+  document.getElementById("download")
+      .addEventListener("click", () => {
+          const invoice = this.document.getElementById("invoice");
+          console.log(invoice);
+          console.log(window);
+          
+          var opt = {
+              margin: 0.1,
+              filename: `MyResume-SwfitBuilder.pdf`,
+              image: { type: 'jpeg', quality: 100 },
+              html2canvas: { scale: 2 },
+              jsPDF: { unit: 'in', format: 'letter', orientation: 'portrait' }
+          };
+          html2pdf().from(invoice).set(opt).save();
+      })
+}
 AboutSelection()
 addSkills();
 submit6()
@@ -251,4 +270,3 @@ ExperienceSelection()
 EducationSelection()
 ProjectSelection()
 DowloadResume()
-

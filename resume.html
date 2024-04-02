@@ -16,6 +16,9 @@
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="style.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.js"></script>
+
 </head>
 
 <body class="font-main">
@@ -118,7 +121,7 @@
 
             </div>
         </div>
-        
+
         <div class="box4">
 
             <h1
@@ -130,17 +133,18 @@
                 <input class="p-[5px] text-left mx-[30px] w-[80%] border-[1px] " type="text" id="School">
 
                 <label for="" class="mx-[30px] text-[17px] font-[600] my-[10px]">Degree</label>
-                <input type="text" class="p-[5px] text-left mx-[30px] w-[80%] border-[1px] " id="Degree"
-                    placeholder="">
+                <input type="text" class="p-[5px] text-left mx-[30px] w-[80%] border-[1px] " id="Degree" placeholder="">
 
                 <label for="" class="mx-[30px] text-[17px] font-[600] my-[10px]">City</label>
                 <input type="text" class="p-[5px] text-left mx-[30px] w-[80%] border-[1px] " id="City" placeholder="">
 
                 <label for="" class="mx-[30px] text-[17px] font-[600] my-[10px]">Start Date</label>
-                <input type="date" class="p-[5px] text-left mx-[30px] w-[80%] border-[1px] " id="Edusdate" placeholder="">
+                <input type="date" class="p-[5px] text-left mx-[30px] w-[80%] border-[1px] " id="Edusdate"
+                    placeholder="">
 
                 <label for="" class="mx-[30px] text-[17px] font-[600] my-[10px]">End Date</label>
-                <input type="date" class="p-[5px] text-left mx-[30px] w-[80%] border-[1px] " id="Eduedate" placeholder="">
+                <input type="date" class="p-[5px] text-left mx-[30px] w-[80%] border-[1px] " id="Eduedate"
+                    placeholder="">
 
                 <label for="" class="mx-[30px] text-[17px] font-[600] my-[10px]">Description</label>
                 <input type="text" class="p-[5px] text-left mx-[30px] w-[80%] border-[1px] " id="Edes" placeholder="">
@@ -169,7 +173,7 @@
                 <label for="" class="mx-[30px] text-[17px] font-[600] my-[10px]">Description</label>
                 <input type="text" class="p-[5px] text-left mx-[30px] w-[80%] border-[1px] " id="pdes" placeholder="">
 
-              
+
 
 
                 <button id="submit5"
@@ -191,29 +195,30 @@
                     class="transition-all bg-black hover:text-black text-white hover:bg-slate-100 mx-[30px] my-[20px] rounded-[6px] p-[10px] text-center min-w-[10%] max-w-[20%] border-[1px]">
                     submit
                 </button>
-<div class="add-remove flex ">
+                <div class="add-remove flex ">
 
-    <div class="add  ">
-        <i class="ri-add-line text-[24px] text-black "></i>
-    </div>
-    <div class="remove ">
-        <i class=" "></i>
-    </div>
-</div>
+                    <div class="add  ">
+                        <i class="ri-add-line text-[24px] text-black "></i>
+                    </div>
+                    <div class="remove ">
+                        <i class=" "></i>
+                    </div>
+                </div>
 
             </div>
         </div>
     </div>
 
 
-    <div class="resume h-[100%] w-[100%] bg-slate-500 border-[1px] border-black p-[20px] flex" id="resume">
+    <div id="invoice" class="h-[100%] w-[100%] bg-slate-500 border-[1px] border-black p-[20px] flex" id="resume">
         <div class="contenar-lift pt-[10px] px-[20px] h-[100%] w-[50%] bg-slate-900">
             <div class="photo ">
                 <img id="Tphoto" class="max-w-[10vw] rounded-[50%] object-cover max-h-[10vw]" src="/assets/profile-img"
                     alt="">
             </div>
             <hr class="my-[10px]">
-            <h1 class=" w-[70%] md:text-[20px] text-[13px] font-[500] text-left  mb-[10px] text-white">ABOUT SECTION</h1>
+            <h1 class=" w-[70%] md:text-[20px] text-[13px] font-[500] text-left  mb-[10px] text-white">ABOUT SECTION
+            </h1>
             <div class="info">
                 <h1 id="Tname" class="text-[20px] font-[600] text-white inline"> </h1>
                 <h1 id="TMname" class="text-[20px] font-[600] text-white inline"> </h1>
@@ -225,22 +230,23 @@
             </div>
             <hr class="my-[10px] ">
             <div class="skill">
-                <h1 id="Tskills" class=" w-[70%] md:text-[20px] text-[13px] font-[500] text-left  mb-[10px] text-white"> skills</h1>
+                <h1 id="Tskills" class=" w-[70%] md:text-[20px] text-[13px] font-[500] text-left  mb-[10px] text-white">
+                    skills</h1>
 
             </div>
         </div>
 
         <div class="contenar-right h-[100%] w-[50%] bg-slate-300">
-           <!-- ACHIEVEMENTS section -->
-           <h1 class=" w-[70%] md:text-[20px] text-[13px] font-[500] text-left  mb-[10px] text-black">ACHIEVEMENTS</h1>
-           <div class="info">
-               <h1 id="TAtitle" class="text-[20px] font-[600] text-black "> </h1>
-               <h1 id="TADes" class="text-[15px] font-[400] text-black "> </h1>
-           
-           </div>
-           <hr class="my-[10px]  border-black">
-           
-           
+            <!-- ACHIEVEMENTS section -->
+            <h1 class=" w-[70%] md:text-[20px] text-[13px] font-[500] text-left  mb-[10px] text-black">ACHIEVEMENTS</h1>
+            <div class="info">
+                <h1 id="TAtitle" class="text-[20px] font-[600] text-black "> </h1>
+                <h1 id="TADes" class="text-[15px] font-[400] text-black "> </h1>
+
+            </div>
+            <hr class="my-[10px]  border-black">
+
+
             <!-- EXPERIENCE section -->
             <h1 class=" w-[70%] md:text-[20px] text-[13px] font-[500] text-left  mb-[10px] text-black">EXPERIENCE</h1>
             <div class="info">
@@ -249,7 +255,7 @@
                 <h1 id="TEsdate" class="text-[20px] font-[600] text-black "> </h1>
                 <h1 id="TEddate" class="text-[15px] font-[400] text-black "> </h1>
                 <h1 id="TExpdes" class="text-[15px] font-[400] text-black "> </h1>
-            
+
             </div>
             <hr class="my-[10px]  border-black">
             <!-- EDUCATION section -->
@@ -261,7 +267,7 @@
                 <h1 id="TEdusdate" class="text-[15px] font-[400] text-black "> </h1>
                 <h1 id="TEduedate" class="text-[15px] font-[400] text-black "> </h1>
                 <h1 id="TEdes" class="text-[15px] font-[400] text-black "> </h1>
-            
+
             </div>
             <hr class="my-[10px] border-black">
             <!-- PROJECTS section -->
@@ -270,18 +276,17 @@
                 <h1 id="Tpname" class="text-[20px] font-[600] text-black "> </h1>
                 <h1 id="Tplink" class="text-[18px] font-[600] text-black "> </h1>
                 <h1 id="Tpdes" class="text-[15px] font-[600] text-black "> </h1>
-               
+
             </div>
-          
+
 
         </div>
-      
+
     </div>
-      <button id="dowload-resume"
-                    class="transition-all bg-black hover:text-black text-white hover:bg-slate-100 mx-[30px] my-[20px] rounded-[6px] p-[10px] text-center min-w-[10%] max-w-[20%] border-[1px]">
-                    Dowload
-                </button>
-    </div>
+    <button id="download"
+        class="transition-all bg-black hover:text-black text-white hover:bg-slate-100 mx-[30px] my-[20px] rounded-[6px] p-[10px] text-center min-w-[10%] max-w-[20%] border-[1px]">
+        Dowload
+    </button>
     <script src="/script.js"></script>
 </body>
 
